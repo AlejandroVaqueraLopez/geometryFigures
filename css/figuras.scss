@@ -1,0 +1,35 @@
+@import "classes";
+@import "./functions";
+
+*{
+    //I really don't know why doesn't work the normalize.css file but I did this 
+    margin:0px;
+    padding:0px;
+}
+body{
+    @extend .body;
+}
+.header_container{
+    @include flex(initial,center,center);
+}
+
+header{
+    @include flex(initial,space-between,center);
+    @extend .header;
+}
+
+.container{
+    @extend .container;
+}
+
+.formGroup{
+    @extend .formGroup;
+}
+
+.button_container{
+    @extend .button_container;
+}
+
+.productImage{
+    @extend .productImage;
+}

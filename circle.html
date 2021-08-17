@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/figuras.css">
+    <title>Geometric figures</title>
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <img src="icons/mathLogo.png" alt="logo">
+            <h1>
+                Geometry figures
+            </h1>
+        </div>
+
+        <nav class="navigator">
+            <ul class="navigator_list">
+                <li class="navigator_list-item"><a href="./figuras.html">Home</a></li>
+                <li class="navigator_list-item"><a href="./square.html">Square</a></li>
+                <li class="navigator_list-item"><a href="./triangle.html">Triangle</a></li>
+                <li class="navigator_list-item"><a href="#">Circle</a></li>
+                <li class="navigator_list-item"><a href="./shop.html">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="container"> 
+        <h2 class="subtitle">Circle</h2>
+        <form action="" class="formGroup">
+            <label for="inputCircleRatio" class="formGroup_label-circleRatio">Circle Ratio</label>
+            <input id="inputCircleRatio" type="number" class="formGroup_input-circleRatio">
+            
+            <div class="button_container">
+                <button type="button" onclick="btnCirclePerimeter()">Get circle perimeter</button>
+                <button type="button" onclick="btnCircleDiameter()">Get circle diameter</button>
+                <button type="button" onclick="btnCircleArea()">Get circle Area</button>
+            </div>
+            
+            <div class="result" id="resultContainer" ></div>
+        </form>
+
+    </section>
+    
+<script src="js/figuras.js"></script>
+</body>
+</html>

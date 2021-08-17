@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/figuras.css">
+    <title>Geometric figures</title>
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <img src="icons/mathLogo.png" alt="logo">
+            <h1>
+                Geometry figures
+            </h1>
+        </div>
+
+        <nav class="navigator">
+            <ul class="navigator_list">
+                <li class="navigator_list-item"><a href="./figuras.html">Home</a></li>
+                <li class="navigator_list-item"><a href="./square.html">Square</a></li>
+                <li class="navigator_list-item"><a href="#">Triangle</a></li>
+                <li class="navigator_list-item"><a href="./circle.html">Circle</a></li>
+                <li class="navigator_list-item"><a href="./shop.html">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <section class="container">
+        <h2 class="subtitle">Triangle</h2>
+        <form action="" class="formGroup">
+            <label for="inputTriangleSideA" class="formGroup_label-triangleSideA">Side A size</label>
+            <input id="inputTriangleSideA" type="number" class="formGroup_input-triangleSideA">
+            
+            <label for="inputTriangleSideB" class="formGroup_label-triangleSideB">Side B size</label>
+            <input id="inputTriangleSideB" type="number" class="formGroup_input-triangleSidB">
+            
+            <label for="inputTriangleBase" class="formGroup_label-triangleBase">Base size</label>
+            <input id="inputTriangleBase" type="number" class="formGroup_input-triangleSideB">
+            
+            <label for="inputTriangleHeight" class="formGroup_label-triangleHeight">Height size</label>
+            <input id="inputTriangleHeight" type="number" class="formGroup_input-triangleHeight">
+            
+            <div class="button_container">
+                <button type="button" onclick="btnTrianglePerimeter()">Get triangle perimeter</button>
+                <button type="button" onclick="btnTriangleArea()">Get triangle Area</button>
+                <button type="button" onclick="btnTriangleHeight()">Get triangle height</button>
+            </div>
+
+            <div id="resultContainer" class="result"></div>
+        </form>
+<script src="js/figuras.js"></script>
+</body>
+</html>  

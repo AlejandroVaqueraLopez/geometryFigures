@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/figuras.css">
+    <title>Geometric figures</title>
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <img src="icons/mathLogo.png" alt="logo">
+            <h1>
+                Geometry figures
+            </h1>
+        </div>
+
+        <nav class="navigator">
+            <ul class="navigator_list">
+                <li class="navigator_list-item"><a href="./figuras.html">Home</a></li>
+                <li class="navigator_list-item"><a href="./square.html">Square</a></li>
+                <li class="navigator_list-item"><a href="./triangle.html">Triangle</a></li>
+                <li class="navigator_list-item"><a href="./circle.html">Circle</a></li>
+                <li class="navigator_list-item"><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <section class="container">
+        <h2 class="subtitle">Triangle</h2>
+        
+        <div class="product_container">
+                <h2 class="product-subtitle">Laptop-k2</h2>
+                <div class="productImage">
+                    <!--In here we put the image of the product as a background-->
+                </div>
+                <h3 class="product-price">
+                    <!--We need to put the price in here-->
+                    This laptop will make you happy :)
+                </h3>
+            
+            <form action="" class="formGroup">
+                <label for="inputProductPrice" class="formGroup_label-productPrice">Price</label>
+                <input id="inputProductPrice" type="number" class="formGroup_input-inputProductPrice">
+                
+                <label for="inputCuponDiscount" class="formGroup_label-cuponDiscount">Discount Cupon</label>
+                <input id="inputCuponDiscount" type="text" class="formGroup_input-cuponDiscount">
+                
+                <label for="inputProductOffer" class="formGroup_label-productOffer">Discount %</label>
+                <input id="inputProductOffer" type="number" class="formGroup_input-productOffer">
+    
+                <div class="button_container">
+                    <button type="button" onclick="btnProductOffer()">Get product offer</button>
+                </div>
+
+                <div id="resultContainer" class="result"></div>
+            </form>
+        </div>
+    </section>
+    
+
+    <script src="js/figuras.js"></script>
+</body>
+</html>  
+

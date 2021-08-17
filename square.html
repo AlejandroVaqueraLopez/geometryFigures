@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/figuras.css">
+    <title>Geometry figures</title>
+</head>
+<body class="body">
+    <header>
+        <div class="header_container">
+            <img src="icons/mathLogo.png" alt="logo">
+            <h1>
+                Geometry figures
+            </h1>
+        </div>
+
+        <nav class="navigator">
+            <ul class="navigator_list">
+                <li class="navigator_list-item"><a href="./figuras.html">Home</a></li>
+                <li class="navigator_list-item"><a href="#">Square</a></li>
+                <li class="navigator_list-item"><a href="./triangle.html">Triangle</a></li>
+                <li class="navigator_list-item"><a href="./circle.html">Circle</a></li>
+                <li class="navigator_list-item"><a href="./shop.html">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="container">
+        <h2 class="subtitle">Square</h2>
+        <form action="" class="formGroup">
+            <label for="inputSquareSide" class="formGroup_label-squareSide">Side size</label>
+            <input id="inputSquareSide"type="number" min="0" class="formGroup_input-squareSide">
+            
+            <div class="button_container">
+                <button type="button" onclick="btnSquarePerimeter()">Get square perimeter</button>
+                <button type="button" onclick="btnSquareArea()">Get square Area</button>
+            </div>
+
+            <div class="result" id="resultContainer"></div>
+        </form>
+    </section>
+<script src="js/figuras.js"></script>
+</body>
+</html>
